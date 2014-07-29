@@ -13,7 +13,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class FilmAdmin(admin.ModelAdmin):
-    pass
+    filter_horizontal = ('actors', 'categories')
 
 
 class LanguageAdmin(admin.ModelAdmin):
